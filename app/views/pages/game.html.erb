@@ -1,0 +1,14 @@
+
+<h1>Game</h1>
+
+<h2><%= $grid.join(' ') %></h2>
+
+<form action="/score">
+  <label for="question"></label>
+  <input type="text" id="question" name="user_guess" placeholder="What is your guess?">
+  <input type="hidden" name="start_time" value=<%= @start_time %>>
+
+  <input type="submit" value="Go on!">
+</form>
+
+
